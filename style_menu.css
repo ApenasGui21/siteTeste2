@@ -32,6 +32,7 @@ body {
 .navbar_item {
     position: relative;
 }
+
 .navbar_item:not(:first-child) {
     margin-left: 30px;
 }
@@ -51,6 +52,16 @@ body {
     display: flex;
     overflow: hidden;
     box-shadow: 4px 5px 10px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(15%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.2s, opacity 0.3s;
+}
+
+.submenu.show {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .submenu img {
@@ -76,6 +87,16 @@ body {
     cursor: pointer;
 }
 
+.submenu_item > a > p{
+    display: inline-block;
+}
+
+.submenu_itens a {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
 .submenu_item:hover {
     background-color: rgba(211, 211, 211, 0.4);
     border-radius: 5px;
@@ -89,4 +110,36 @@ body {
     font-size: 16px;
     color: chocolate;
     margin-right: 10px;
+}
+
+.form {
+    padding: 30px 30px 20px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.form_input:not(:first-child) {
+    margin-top: 30px;
+}
+
+.form_input {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+.form_btn {
+    display: block;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px 30px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    background-color: black;
+    cursor: pointer;
 }
