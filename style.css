@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+* {
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 0px;
+    padding: 0px;   
+}
+
+header {
+    background-image: linear-gradient(to bottom, #586765, #2f4858);
+    color: rgb(198, 198, 198);
+    text-align: center;
+    min-height: 150px;
+    padding-top: 20px;
+    font-variant: small-caps;
+    
+}
+
+header > h1 {
+    margin: 10px;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 0px rgb(109, 109, 109);
+}
+
+header > h3 {
+    font-family: serif;
+    color: rgb(179, 179, 179);
+    text-shadow: 2px 1px 0px rgb(109, 109, 109);
+    padding-bottom: 30px;
+}
+
+nav {
+    padding: 10px;
+}
+
+nav > a{
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    border: solid;
+    border-color: lightcoral;
+    border-radius: 10px;
+    transition-duration: .5s;
+}
+
+img {
+    width: 40%;
+    margin: auto;
+    display: block;
+}
+
+.destaque {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    width: 590px;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+body {
+    background-color: black;
+    background-image: url(imgs/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container2 {
+    position: relative;
+    height: 500px;
+    padding: 10px;
+    background-color: purple;
+    margin: 50px 20px;
+}
+
+#container {
+    position: relative;
+    height: 500px;
+    padding: 10px;
+    margin: 50px 20px;
+}
+
+#conteudo {
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background-color: yellow;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+footer {
+    background-color: #2f4858;
+    padding: 30px 20px 50px 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(198, 198, 198);
+}
+
+
+.part1 {
+    background-color: darkgray;
+    padding: 5vh 30px 5vh 30px;
+    text-align: center;
+    margin: auto;
+    font-family: 'EB Garamond', serif;
+}
+
+.part1 > p {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+}
+
+.part1I {
+    background-color: rgb(54, 54, 54);
+    color: white;
+    padding: 5vh 30px 5vh 30px;
+    text-align: center;
+    margin: auto;
+}
+
+.part1I > p {
+    background-color: rgba(0, 0, 0, 0.314);
+    /* display: inline-block; */
+    width: 60%;
+    padding: 1%;
+    margin: auto;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+}
+
+#img01 {
+    background-image: url(imgs/fundo.jpg);
+    background-position: center center;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.612);
+    background-attachment: fixed;
+}
+
+#img02 {
+    background-image: url(imgs/fundo2.png);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#img03 {
+    background-image: url(imgs/fundo3.png);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+
